@@ -1,1 +1,14 @@
+#!url=http://script.hub/file/_start_/https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf/_end_/tieba-qx.sgmodule?type=qx-rewrite&target=shadowrocket-module
+#!name=tieba-qx
+#!desc=tieba-qx
+
+[Script]
+
+tieba-json_5 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js, timeout=60, script-update-interval=0
+
+tieba-proto_6 = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% tiebac.baidu.com
 
