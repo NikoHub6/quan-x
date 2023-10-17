@@ -1,1 +1,13 @@
+#!url=http://script.hub/file/_start_/https://raw.githubusercontent.com/yqc007/QuantumultX/master/LightBeautyCamCrack.js/_end_/LightBeautyCamCrack.sgmodule?type=qx-rewrite&target=shadowrocket-module
+#!name=LightBeautyCamCrack
+#!desc=LightBeautyCamCrack
+
+[Script]
+
+# > 轻颜相机解锁会员
+LightBeautyCamCrack_11 = type=http-request, pattern=^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/LightBeautyCamCrack.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% commerce-api.faceu.mobi
 
