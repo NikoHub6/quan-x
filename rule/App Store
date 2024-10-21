@@ -1,8 +1,8 @@
 # App Store
 # 2024-10-06 21:50
 
-HOST-SUFFIX, apps.apple.com
-HOST-SUFFIX, itunes.apple.com
-HOST-SUFFIX, mzstatic.com
-HOST, itunes.apple.com
-HOST, ppq.apple.com
+HOST-SUFFIX,apps.apple.com
+HOST-SUFFIX,itunes.apple.com
+HOST-SUFFIX,mzstatic.com
+HOST,itunes.apple.com
+HOST,ppq.apple.com
